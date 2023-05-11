@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Osobní portfolio programátorky Barbory Homolové."
+    />
+    <meta
+      name="keywords"
+      content="portfolio, kódování, programátor, Barbora Homolová"
+    />
+    <meta name="author" content="Barbora Homolová" />
+    <link rel="shortcut icon" href="obrazky/icon.ico" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Můj web</title>
+  </head>
+
+  <body>
+    <header id="navigace">
+      <div id="logo">
+        <h1>Bára<span>Homolová</span></h1>
+        <small>FrontEnd Developer</small>
+    </div>
+      <nav>
+        <ul>
+          <li class="aktivni"><a href="index.html">Domů</a></li>
+          <li><a href="omne.html">O mně</a></li>
+          <li><a href="dovednosti.html">Dovednosti</a></li>
+          <li><a href="reference.html">Reference</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="centrovac">
+      <article class="domu-article">
+        <header>
+          <h1>Můj web</h1>
+        </header>
+        <section>
+          <script type="text/javascript">
+            let d = new Date();
+
+            if (d.getHours() >= 5 && d.getHours() <= 9) {
+              document.write("Dobré ráno!");
+            } else if (d.getHours() >= 10 && d.getHours() <= 11) {
+              document.write("Dobré dopoledne!");
+            } else if (d.getHours() == 12) {
+              document.write("Dobré poledne!");
+            } else if (d.getHours() >= 13 && d.getHours() <= 17) {
+              document.write("Dobré odpoledne!");
+            } else if (d.getHours() >= 17 && d.getHours() <= 21) {
+              document.write("Dobrý večer!");
+            } else {
+              document.write("Přeji krásnou noc!");
+            }
+          </script>
+          <p>Vítejte na mém prvním webu!</p>
+          <div class="odstavec">
+            <p>
+              Zajímám se o obor IT, učím se tvořit weby a programovat. Ráda se
+              vzdělávám a účastním se různých meetupů a vzdělávacích akcí. Ve
+              volném čase zpívám a sportuji. Více informací naleznete v sekci
+              <a href="omne.html" id="omne-tlacitko">O mně</a> .
+            </p>
+
+            <p>
+              Zde je odkaz na můj profil na
+              <a
+                id="tlacitko-linkedin"
+                href="https://www.linkedin.com/in/barbora-homolov%C3%A1-2892b86/"
+                target="blank"
+              >
+                LinkedIn</a
+              >.
+            </p>
+            <p>
+              Kontakt na mě naleznete v sekci
+              <a href="kontakt.html" id="kontakt-tlacitko">kontaktní stránce</a
+              >. Zde nejdete
+              <a href="reference.html" id="reference-tlacitko">Moje reference</a
+              >.
+            </p>
+          </div>
+        </section>
+        <img src="obrazky/bara.jpg" id="avatar" alt="fotoBara" />
+      </article>
+    </div>
+    <footer>Vytvořila &copy;Barbora Homolová 2023</footer>
+  </body>
+</html>
