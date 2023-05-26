@@ -28,7 +28,6 @@ body {
 body > header {
   height: 100px;
   width: 100%;
-  /* background: #00386b; */
   background: #414042;
   color: white;
   display: flex;
